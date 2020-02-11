@@ -26,6 +26,10 @@ socket.on('connect', () => {
   console.log("connected");
   socket.emit("start company", username);
 
+  setInterval(() => {
+    socker.emit("make money");
+  }, 0);
+
   socket.on("message", data => {
     console.log(data.msg)
     if (data.msg.length == 1) {

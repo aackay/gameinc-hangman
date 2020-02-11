@@ -27,7 +27,7 @@ socket.on('connect', () => {
   socket.emit("start company", username);
 
   setInterval(() => {
-    socker.emit("make money");
+    socket.emit("make money");
   }, 0);
 
   socket.on("message", data => {

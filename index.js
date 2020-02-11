@@ -4,7 +4,7 @@ const socket = require('socket.io-client')('http://gameinc.io');
 const words = fs.readFileSync("words.txt", "utf8").split(" ");
 let known_letters = [];
 
-const username = "hangman"
+const username = "Hangman (type \"new game\" to start)"
 
 const new_word = () => words[Math.floor(Math.random() * words.length)];
 

@@ -23,7 +23,6 @@ function pretty_word() {
 let word = new_word();
 
 socket.on('connect', () => {
-  console.log(word)
   console.log("connected");
   socket.emit("start company", username);
 
